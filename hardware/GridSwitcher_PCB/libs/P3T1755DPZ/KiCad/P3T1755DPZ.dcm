@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP P3T1755DPZ
+D Board Mount Temperature Sensors I3C, I2C-bus interface, 0.5  C accuracy, digital temperaturesensor
+K
+F https://www.nxp.com/docs/en/data-sheet/P3T1755DS.pdf
+$ENDCMP
+#
+#End Doc Library

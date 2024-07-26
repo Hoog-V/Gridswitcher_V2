@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP UCC27536DBVR
+D 2.5-A, 5-A, 35-VMAX VDD FET and IGBT Single Gate Driver
+K
+F http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fucc27533
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP R-78K3.3-0.5
+D 0.5 Amp SIP3 Single Output
+K
+F https://recom-power.com/pdf/Innoline/R-78K-0.5.pdf
+$ENDCMP
+#
+#End Doc Library

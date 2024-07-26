@@ -1,0 +1,9 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "FRDM-MCXN947__Shield_Template-altium-import")(type "KiCad")(uri "${KIPRJMOD}/libs/FRDM-MCXN947/FRDM-MCXN947__Shield_Template-altium-import.kicad_sym")(options "")(descr ""))
+  (lib (name "INA237AIDGSR")(type "KiCad")(uri "${KIPRJMOD}/libs/INA237AIDGSR/INA237AIDGSR.kicad_sym")(options "")(descr ""))
+  (lib (name "R-78K3_3-0_5")(type "KiCad")(uri "${KIPRJMOD}/libs/R-78K3.3-0.5/KiCad/R-78K3_3-0_5.kicad_sym")(options "")(descr ""))
+  (lib (name "UCC27536DBVR")(type "KiCad")(uri "${KIPRJMOD}/libs/UCC27536DBVR/KiCad/UCC27536DBVR.kicad_sym")(options "")(descr ""))
+  (lib (name "P3T1755DPZ")(type "KiCad")(uri "${KIPRJMOD}/libs/P3T1755DPZ/KiCad/P3T1755DPZ.kicad_sym")(options "")(descr ""))
+  (lib (name "ESDS304DBVR")(type "KiCad")(uri "${KIPRJMOD}/libs/ESDS304DBVR/KiCad/ESDS304DBVR.kicad_sym")(options "")(descr ""))
+)

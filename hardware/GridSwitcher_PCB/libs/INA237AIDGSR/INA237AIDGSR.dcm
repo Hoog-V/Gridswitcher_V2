@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP INA237AIDGSR
+D Current Sense Amplifiers 85-V, 16-bit, I2C output current/voltage/power monitor with alert
+K
+F https://www.ti.com/lit/gpn/INA237
+$ENDCMP
+#
+#End Doc Library
