@@ -2143,13 +2143,13 @@
   (symbol (lib_id "FRDM-MCXN947__Shield_Template-altium-import:root_2_mirrored_SSQ-110-03-T-D") (at 209.55 46.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0a8bfc78-7809-4355-adee-b6bb0ac8f8d8)
-    (property "Reference" "J4" (at 205.74 33.02 0)
+    (property "Reference" "J2" (at 205.74 33.02 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
     (property "Value" "${ALTIUM_VALUE}" (at 203.2 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Footprint" "" (at 209.55 46.99 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" (at 209.55 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 209.55 46.99 0)
@@ -2187,7 +2187,7 @@
     (instances
       (project "GridSwitcher_PCB"
         (path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/fc33dd87-afec-4399-b566-7d146648c6e3"
-          (reference "J4") (unit 1)
+          (reference "J2") (unit 1)
         )
       )
     )
@@ -2196,13 +2196,13 @@
   (symbol (lib_id "FRDM-MCXN947__Shield_Template-altium-import:root_2_mirrored_SSQ-108-03-T-D") (at 209.55 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4a5955b0-c44f-43fc-979d-0aeab4b38501)
-    (property "Reference" "J5" (at 205.74 71.12 0)
+    (property "Reference" "J1" (at 205.74 71.12 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
     (property "Value" "${ALTIUM_VALUE}" (at 205.74 93.98 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Footprint" "" (at 209.55 82.55 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" (at 209.55 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 209.55 82.55 0)
@@ -2236,7 +2236,7 @@
     (instances
       (project "GridSwitcher_PCB"
         (path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/fc33dd87-afec-4399-b566-7d146648c6e3"
-          (reference "J5") (unit 1)
+          (reference "J1") (unit 1)
         )
       )
     )
@@ -2245,13 +2245,13 @@
   (symbol (lib_id "FRDM-MCXN947__Shield_Template-altium-import:root_0_mirrored_SSQ-116-03-T-D") (at 212.09 135.89 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 72a7d0c5-169b-4621-bcb7-b3b2a0cf5f14)
-    (property "Reference" "J6" (at 208.28 116.84 0)
+    (property "Reference" "J9" (at 208.28 116.84 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
     (property "Value" "${ALTIUM_VALUE}" (at 208.28 160.02 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Footprint" "" (at 212.09 135.89 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Vertical" (at 212.09 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 212.09 135.89 0)
@@ -2301,7 +2301,7 @@
     (instances
       (project "GridSwitcher_PCB"
         (path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/fc33dd87-afec-4399-b566-7d146648c6e3"
-          (reference "J6") (unit 1)
+          (reference "J9") (unit 1)
         )
       )
     )
@@ -2310,13 +2310,13 @@
   (symbol (lib_id "FRDM-MCXN947__Shield_Template-altium-import:root_0_mirrored_SSQ-114-03-T-D") (at 60.96 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 81165df4-6d07-4867-8f08-b2cd8d0478ba)
-    (property "Reference" "J1" (at 57.15 129.54 0)
+    (property "Reference" "J12" (at 57.15 129.54 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
     (property "Value" "${ALTIUM_VALUE}" (at 57.15 167.64 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Footprint" "" (at 60.96 144.78 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x14_P2.54mm_Vertical" (at 60.96 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 60.96 144.78 0)
@@ -2362,7 +2362,7 @@
     (instances
       (project "GridSwitcher_PCB"
         (path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/fc33dd87-afec-4399-b566-7d146648c6e3"
-          (reference "J1") (unit 1)
+          (reference "J12") (unit 1)
         )
       )
     )
@@ -2371,13 +2371,13 @@
   (symbol (lib_id "FRDM-MCXN947__Shield_Template-altium-import:root_0_mirrored_SSQ-108-03-T-D") (at 71.12 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b161b1bc-d356-4d47-a393-47cd66fc7f44)
-    (property "Reference" "J2" (at 67.31 27.94 0)
+    (property "Reference" "J3" (at 67.31 27.94 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
     (property "Value" "${ALTIUM_VALUE}" (at 67.31 50.8 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Footprint" "" (at 71.12 36.83 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" (at 71.12 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 71.12 36.83 0)
@@ -2411,7 +2411,7 @@
     (instances
       (project "GridSwitcher_PCB"
         (path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/fc33dd87-afec-4399-b566-7d146648c6e3"
-          (reference "J2") (unit 1)
+          (reference "J3") (unit 1)
         )
       )
     )
@@ -2420,13 +2420,13 @@
   (symbol (lib_id "FRDM-MCXN947__Shield_Template-altium-import:root_0_mirrored_SSQ-106-03-T-D") (at 71.12 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ed0f9369-d941-43ac-8442-e847512f7829)
-    (property "Reference" "J3" (at 67.31 72.39 0)
+    (property "Reference" "J4" (at 67.31 72.39 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
     (property "Value" "${ALTIUM_VALUE}" (at 67.31 90.17 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Footprint" "" (at 71.12 78.74 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" (at 71.12 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 71.12 78.74 0)
@@ -2456,7 +2456,7 @@
     (instances
       (project "GridSwitcher_PCB"
         (path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/fc33dd87-afec-4399-b566-7d146648c6e3"
-          (reference "J3") (unit 1)
+          (reference "J4") (unit 1)
         )
       )
     )
