@@ -35,3 +35,5 @@ build/
 Build/
 cmake-build-debug/
 cmake-build-release/
+.vscode/
+hardware/GridSwitcher_PCB/GridSwitcher_PCB-backups/

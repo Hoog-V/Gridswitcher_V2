@@ -45,6 +45,13 @@ add_library(hal_drivers board_sdk/drivers/fsl_clock.c
                         board_sdk/drivers/fsl_power.c
                         board_sdk/drivers/fsl_reset.c
                         board_sdk/drivers/fsl_spc.c
+                        board_sdk/drivers/fsl_edma.c
+                        board_sdk/drivers/fsl_edma_soc.c
+                        board_sdk/drivers/fsl_lpspi.c
+                        board_sdk/drivers/fsl_lpspi_edma.c
+                        board_sdk/drivers/fsl_lpi2c.c
+                        board_sdk/drivers/fsl_lpi2c_edma.c
+                        board_sdk/drivers/freertos/fsl_lpi2c_freertos.c
                         board_sdk/drivers/flash/src/fsl_flash.c
                         board_sdk/device/system_MCXN947_cm33_core0.c
                         board_sdk/component/gpio/fsl_adapter_gpio.c
@@ -62,6 +69,7 @@ add_library(hal_drivers board_sdk/drivers/fsl_clock.c
 
 target_include_directories(hal_drivers PUBLIC board_sdk/device
                                               board_sdk/drivers
+                                              board_sdk/drivers/freertos
                                               board_sdk/drivers/flash
                                               board_sdk/component/gpio
                                               board_sdk/component/lists

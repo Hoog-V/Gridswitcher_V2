@@ -13606,18 +13606,6 @@ static const unsigned char data_script_js[] = {
 	0xa, 0x20, 0x20, 0x7d, 0x2c, 0x20, 0x31, 0x30, 0x30, 0x30, 
 	0x29, 0x3b, 0xa, 0x7d, 0x29, 0x3b, };
 
-//const struct fsdata_file file_css_style_css[] = {{NULL, data_css_style_css, data_css_style_css + 15, sizeof(data_css_style_css) - 15, FS_FILE_FLAGS_HEADER_INCLUDED | FS_FILE_FLAGS_HEADER_PERSISTENT}};
-//
-//const struct fsdata_file file_index_html[] = {{file_css_style_css, data_index_html, data_index_html + 12, sizeof(data_index_html) - 12, FS_FILE_FLAGS_HEADER_INCLUDED | FS_FILE_FLAGS_HEADER_PERSISTENT}};
-//
-//const struct fsdata_file file_makefsdata_perl[] = {{file_index_html, data_makefsdata_perl, data_makefsdata_perl + 17, sizeof(data_makefsdata_perl) - 17, FS_FILE_FLAGS_HEADER_INCLUDED | FS_FILE_FLAGS_HEADER_PERSISTENT}};
-//
-//const struct fsdata_file file_fsdata_c[] = {{file_makefsdata_perl, data_fsdata_c, data_fsdata_c + 10, sizeof(data_fsdata_c) - 10, FS_FILE_FLAGS_HEADER_INCLUDED | FS_FILE_FLAGS_HEADER_PERSISTENT}};
-//
-//const struct fsdata_file file_script_js[] = {{file_fsdata_c, data_script_js, data_script_js + 11, sizeof(data_script_js) - 11, FS_FILE_FLAGS_HEADER_INCLUDED | FS_FILE_FLAGS_HEADER_PERSISTENT}};
-
 const HTTPSRV_FS_DIR_ENTRY httpsrv_fs_data[] = {{"/index.html", 0, (unsigned char *) data_index_html, sizeof(data_index_html)},
-												{"/css/style.css", 0, (unsigned char *) data_css_style_css, sizeof(data_css_style_css)}};
-#define FS_ROOT file_script_js
-
-#define FS_NUMFILES 5
+												{"/css/style.css", 0, (unsigned char *) data_css_style_css, sizeof(data_css_style_css)},
+											    {0, 0, 0, 0}};

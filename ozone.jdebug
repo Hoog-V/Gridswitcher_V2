@@ -22,14 +22,13 @@ void OnProjectLoad (void) {
   //
   // Dialog-generated settings
   //
-  Project.AddPathSubstitute ("/mnt/3c8641a4-f089-425f-b228-e740a9f7575e/Gridswitcher_V2", "$(ProjectDir)");
-  Project.AddPathSubstitute ("/mnt/3c8641a4-f089-425f-b228-e740a9f7575e/gridswitcher_v2", "$(ProjectDir)");
+  Project.AddPathSubstitute (".", "$(ProjectDir)");
   Project.SetDevice ("MCXN947_M33_0");
   Project.SetHostIF ("USB", "");
   Project.SetTargetIF ("SWD");
   Project.SetTIFSpeed ("4 MHz");
   Project.AddSvdFile ("$(InstallDir)/Config/CPU/Cortex-M33F.svd");
-  Project.AddSvdFile ("/mnt/3c8641a4-f089-425f-b228-e740a9f7575e/Gridswitcher_V2/board_sdk/MCXN947_cm33_core0.xml");
+  Project.AddSvdFile ("$(ProjectDir)/board_sdk/MCXN947_cm33_core0.xml");
   //
   // User settings
   //
