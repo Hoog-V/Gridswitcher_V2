@@ -234,11 +234,12 @@ extern phy_lan8741_resource_t g_phy_resource;
 #define I2C_SCL  2 //P3_2
 #define I2C_SDA 3 //P3_3
 
-#define I2C_SCL1 13 //P1_13
-#define I2C_SDA1 12 //P1_12
+#define I2C_SCL1 1 //P1_1
+#define I2C_SDA1 0 //P1_0
 
 #define UART1_RXD 16 //P1_16
 #define UART1_TXD 17 //P1_17
+#define UART1_RTS 18 //P1_18
 
 /*******************************************************************************
  * Prototypes
@@ -658,12 +659,12 @@ lpi2c_master_config_t ads_config;
 lpi2c_master_transfer_t ads_transfer;
 
 static void i2c_test_task(void *arg) {
-     CLOCK_EnableClock(kCLOCK_Port3);
-     CLOCK_EnableClock(kCLOCK_LPFlexComm7);
-     CLOCK_EnableClock(kCLOCK_LPI2c7);
-    LP_FLEXCOMM_Init(7, LP_FLEXCOMM_PERIPH_LPI2C);
-     CLOCK_SetClkDiv(kCLOCK_DivFlexcom7Clk, 1u);
-     CLOCK_AttachClk(kFRO12M_to_FLEXCOMM7);
+     CLOCK_EnableClock(kCLOCK_Port1);
+     CLOCK_EnableClock(kCLOCK_LPFlexComm3);
+     CLOCK_EnableClock(kCLOCK_LPI2c3);
+    LP_FLEXCOMM_Init(3, LP_FLEXCOMM_PERIPH_LPI2C);
+     CLOCK_SetClkDiv(kCLOCK_DivFlexcom3Clk, 1u);
+     CLOCK_AttachClk(kFRO12M_to_FLEXCOMM3);
     //  PORT_SetPinMux(PORT1, I2C_SCL1, kPORT_MuxAlt2);
     //  PORT_SetPinMux(PORT1, I2C_SDA1, kPORT_MuxAlt2);
     port_pin_config_t port_cfg = {.driveStrength = kPORT_LowDriveStrength, 
@@ -676,15 +677,15 @@ static void i2c_test_task(void *arg) {
                                   .pullSelect=kPORT_PullDisable, 
                                   .pullValueSelect=0, 
                                   .slewRate=kPORT_FastSlewRate};
-     PORT_SetPinConfig(PORT3, I2C_SCL, &port_cfg);
-     PORT_SetPinConfig(PORT3, I2C_SDA, &port_cfg);
+     PORT_SetPinConfig(PORT1, I2C_SCL1, &port_cfg);
+     PORT_SetPinConfig(PORT1, I2C_SDA1, &port_cfg);
 
      vTaskDelay(100/portTICK_PERIOD_MS);
      LPI2C_MasterGetDefaultConfig(&ads_config);
      ads_config.baudRate_Hz = 100000U;
      ads_config.pinConfig = kLPI2C_2PinPushPull;
-     uint32_t src_clock = CLOCK_GetLPFlexCommClkFreq(7);
-     LPI2C_MasterInit(LPI2C7_BASE, &ads_config, src_clock);
+     uint32_t src_clock = CLOCK_GetLPFlexCommClkFreq(3);
+     LPI2C_MasterInit(LPI2C3_BASE, &ads_config, src_clock);
      vTaskDelay(100/portTICK_PERIOD_MS);
      static uint8_t transmitdata = {0x00};
      static uint8_t recv[10];
@@ -693,12 +694,12 @@ static void i2c_test_task(void *arg) {
      ads_transfer.direction = kLPI2C_Write;
      ads_transfer.slaveAddress = 0b01101000;
      ads_transfer.flags = kLPI2C_TransferDefaultFlag;
-     LPI2C_MasterTransferBlocking(LPI2C7_BASE, &ads_transfer);
+     LPI2C_MasterTransferBlocking(LPI2C3_BASE, &ads_transfer);
      ads_transfer.data = &recv;
      ads_transfer.dataSize = 1;
      ads_transfer.direction = kLPI2C_Read;
      ads_transfer.flags = kLPI2C_TransferDefaultFlag;
-     volatile status_t status = LPI2C_MasterTransferBlocking(LPI2C7_BASE, &ads_transfer);
+     volatile status_t status = LPI2C_MasterTransferBlocking(LPI2C3_BASE, &ads_transfer);
      volatile int seconds = (((recv[0] & 0x70) >> 4) * 10) + (recv[0] & 0x0F);
     
      while(1){
@@ -801,6 +802,7 @@ static void gpio_input_test_task(void *arg) {
 
 static void uart_test_task(void *arg) {
      CLOCK_EnableClock(kCLOCK_Port1);
+     CLOCK_EnableClock(kCLOCK_Gpio1);
      CLOCK_EnableClock(kCLOCK_LPFlexComm5);
      CLOCK_EnableClock(kCLOCK_LPUart5);
      LP_FLEXCOMM_Init(5, LP_FLEXCOMM_PERIPH_LPUART);
@@ -820,6 +822,10 @@ static void uart_test_task(void *arg) {
                                   .slewRate=kPORT_FastSlewRate};
      PORT_SetPinConfig(PORT1, UART1_RXD, &port_cfg);
      PORT_SetPinConfig(PORT1, UART1_TXD, &port_cfg);
+    //  PORT_SetPinConfig(PORT1, UART1_RTS, &port_cfg);
+    PORT_SetPinMux(PORT1, UART1_RTS, kPORT_MuxAsGpio);
+    gpio_pin_config_t pincfg = {.outputLogic = 1, .pinDirection = kGPIO_DigitalOutput};
+    GPIO_PinInit(GPIO1, UART1_RTS, &pincfg);
      lpuart_config_t uart_conf;
      LPUART_GetDefaultConfig(&uart_conf);
      uart_conf.baudRate_Bps = 9600;
@@ -834,12 +840,17 @@ static void uart_test_task(void *arg) {
      uint32_t src_clock = CLOCK_GetLPFlexCommClkFreq(5);
      LPUART_Init(LPUART5, &uart_conf, src_clock);
      vTaskDelay(100/portTICK_PERIOD_MS);
-     uint8_t buf[10];
-
+    const char test[] = "Hello World!\r\n";
+    uint8_t data[10];
     while(1) {
-     vTaskDelay(10000/portTICK_PERIOD_MS);
+     LPUART_ReadBlocking(LPUART5, data, 1);
+     GPIO_PinWrite(GPIO1, UART1_RTS, 1);
+     LPUART_WriteBlocking(LPUART5,data, 1);
+     GPIO_PinWrite(GPIO1, UART1_RTS, 0);
+     vTaskDelay(100/portTICK_PERIOD_MS);
     }
 }
+
 
 /*!
  * @brief Main function.

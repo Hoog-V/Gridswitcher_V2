@@ -4499,6 +4499,88 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "Mechanical:MountingHole_Pad"
 			(pin_numbers hide)
 			(pin_names
@@ -5047,6 +5129,12 @@
 		(uuid "e18813d4-031d-4595-9ee1-398d16ed4aab")
 	)
 	(junction
+		(at 175.26 251.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f0022965-3362-4c46-bcf5-0ad286f1d7ae")
+	)
+	(junction
 		(at 234.95 251.46)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5063,6 +5151,10 @@
 	(no_connect
 		(at 289.56 193.04)
 		(uuid "595ce452-4b0c-4c20-ab43-23ee30492265")
+	)
+	(no_connect
+		(at 162.56 160.02)
+		(uuid "6a60beba-6bf4-4492-b6ab-6eff76d74c0d")
 	)
 	(no_connect
 		(at 52.07 62.23)
@@ -5111,6 +5203,10 @@
 	(no_connect
 		(at 162.56 182.88)
 		(uuid "e9307c04-5cc7-46f6-8e26-9ef4a94d7e16")
+	)
+	(no_connect
+		(at 52.07 170.18)
+		(uuid "f2c88f8f-a360-48fb-83a0-374adbbc17db")
 	)
 	(wire
 		(pts
@@ -6084,7 +6180,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 160.02) (xy 173.99 160.02)
+			(xy 162.56 43.18) (xy 173.99 43.18)
 		)
 		(stroke
 			(width 0)
@@ -6324,6 +6420,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 251.46) (xy 175.26 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dcffde1-5fa5-4494-8503-54dba8d6f6b0")
+	)
+	(wire
+		(pts
 			(xy 330.2 83.82) (xy 326.39 83.82)
 		)
 		(stroke
@@ -6551,6 +6657,16 @@
 			(type default)
 		)
 		(uuid "72edb428-1b1f-4541-a405-f68f0ae1d2c7")
+	)
+	(wire
+		(pts
+			(xy 163.83 251.46) (xy 175.26 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74d9f974-308e-4364-87f1-a1a6ed7fe428")
 	)
 	(wire
 		(pts
@@ -7534,6 +7650,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 248.92) (xy 175.26 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0099170-894b-444f-921a-28627d14be74")
+	)
+	(wire
+		(pts
 			(xy 52.07 57.15) (xy 38.1 57.15)
 		)
 		(stroke
@@ -7591,6 +7717,16 @@
 			(type default)
 		)
 		(uuid "d46c8050-5284-4e23-9541-d78208022a56")
+	)
+	(wire
+		(pts
+			(xy 162.56 134.62) (xy 173.99 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d580c02f-1eaa-439a-8106-751caa78de93")
 	)
 	(wire
 		(pts
@@ -7694,7 +7830,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 170.18) (xy 52.07 170.18)
+			(xy 173.99 45.72) (xy 162.56 45.72)
 		)
 		(stroke
 			(width 0)
@@ -8007,6 +8143,17 @@
 			(justify left bottom)
 		)
 		(uuid "0466524f-ecf0-43d3-8f3c-ab093f1096af")
+	)
+	(label "RS485_RTS"
+		(at 173.99 134.62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "08035e2e-ad59-4f59-bf93-8068ff6b3712")
 	)
 	(label "I2C_SCL"
 		(at 273.05 144.78 180)
@@ -8492,17 +8639,6 @@
 		)
 		(uuid "52decf1b-5502-4b6f-af97-8b00468b7081")
 	)
-	(label "RS485_DE"
-		(at 175.26 254 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "555bebf6-571e-4191-aaa6-220c1d4e5366")
-	)
 	(label "MOS_15_ON"
 		(at 318.77 236.22 0)
 		(fields_autoplaced yes)
@@ -8647,13 +8783,13 @@
 		(uuid "6295b790-dd0a-42e2-b65f-6aa0a3f00a24")
 	)
 	(label "I2C_SCL1"
-		(at 40.64 170.18 0)
+		(at 173.99 45.72 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "642ccb6c-d450-47e1-b9f0-c8e3bfbe9bb0")
 	)
@@ -8988,7 +9124,7 @@
 		(uuid "9014b5cc-ba85-4390-b79c-2be108b403a9")
 	)
 	(label "I2C_SDA1"
-		(at 173.99 160.02 180)
+		(at 173.99 43.18 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9383,8 +9519,8 @@
 		)
 		(uuid "bc6b57f5-7b60-4a9e-9a11-68a697f045ca")
 	)
-	(label "RS485_RE"
-		(at 175.26 248.92 0)
+	(label "RS485_RTS"
+		(at 163.83 251.46 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11274,6 +11410,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 280.67 78.74 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "270dd562-2842-46a1-9434-e79df7a80f6b")
+		(property "Reference" "H3"
+			(at 283.21 77.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 283.21 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 280.67 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 280.67 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 280.67 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "GridSwitcher_PCB"
+				(path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 383.54 86.36 270)
 		(unit 1)
@@ -11540,7 +11740,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
 			(at 279.4 180.34 0)
 			(effects
 				(font
@@ -13620,7 +13820,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
 			(at 229.87 179.07 0)
 			(effects
 				(font
@@ -13979,6 +14179,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 259.08 87.63 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0b75bd9-b32e-4303-af9b-fa3eb123c624")
+		(property "Reference" "H4"
+			(at 261.62 86.3599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 261.62 88.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 259.08 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 259.08 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 259.08 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "GridSwitcher_PCB"
+				(path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 195.58 238.76 0)
 		(unit 1)
@@ -14307,6 +14571,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 259.08 78.74 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad6ef0f8-19b3-422a-80bb-08f61765deeb")
+		(property "Reference" "H2"
+			(at 261.62 77.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 261.62 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 259.08 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 259.08 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 259.08 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ESDS304DBVR:ESDS304DBVR")
 		(at 203.2 69.85 0)
 		(unit 1)
@@ -14562,6 +14890,70 @@
 			(project "GridSwitcher_PCB"
 				(path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 280.67 87.63 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b7e4f5aa-961f-48ee-9ddf-7bdf81a8e888")
+		(property "Reference" "H5"
+			(at 283.21 86.3599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 283.21 88.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 280.67 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 280.67 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 280.67 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "GridSwitcher_PCB"
+				(path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669"
+					(reference "H5")
 					(unit 1)
 				)
 			)

@@ -125,6 +125,221 @@
 				)
 			)
 		)
+		(symbol "Connector:Barrel_Jack_MountingPin"
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J7"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Barrel_Jack_MountingPin"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002"
+				(at 1.27 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 1.27 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "DC Barrel Jack with a mounting pin"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "DC power barrel jack connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "BarrelJack*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Barrel_Jack_MountingPin_0_1"
+				(rectangle
+					(start -5.08 3.81)
+					(end 5.08 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(arc
+					(start -3.302 3.175)
+					(mid -3.9343 2.54)
+					(end -3.302 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.302 3.175)
+					(mid -3.9343 2.54)
+					(end -3.302 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 3.81 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -2.54) (xy -2.54 -2.54) (xy -1.27 -1.27) (xy 0 -2.54) (xy 2.54 -2.54) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.683 3.175)
+					(end -3.302 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "Barrel_Jack_MountingPin_1_1"
+				(polyline
+					(pts
+						(xy -1.016 -4.572) (xy 1.016 -4.572)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "Mounting"
+					(at 0 -4.191 0)
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 3.048)
+					(name "MountPin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector:Conn_01x02_Pin"
 			(pin_names
 				(offset 1.016) hide)
@@ -4386,6 +4601,12 @@
 		(uuid "b241dfb9-5983-480a-996b-dcdbc6e75d4c")
 	)
 	(junction
+		(at 62.23 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b448a4a7-ee40-4c81-8e38-5c6927fc16e0")
+	)
+	(junction
 		(at 88.9 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4426,6 +4647,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f54c733a-da22-4339-aa20-53e6b09d3fba")
+	)
+	(junction
+		(at 152.4 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f55d6945-5958-4a48-ac48-b87aa618bd46")
 	)
 	(junction
 		(at 194.31 44.45)
@@ -4565,6 +4792,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 116.84) (xy 59.69 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bb3d124-bb92-4ea0-8bcc-d3003fde4acf")
+	)
+	(wire
+		(pts
 			(xy 215.9 49.53) (xy 218.44 49.53)
 		)
 		(stroke
@@ -4645,6 +4882,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 116.84) (xy 59.69 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "465e3d75-ab1c-469f-907b-28928f545551")
+	)
+	(wire
+		(pts
 			(xy 118.11 43.18) (xy 116.84 43.18)
 		)
 		(stroke
@@ -4652,6 +4899,16 @@
 			(type default)
 		)
 		(uuid "49cc550a-3da7-49a2-90b0-21386b2a35ee")
+	)
+	(wire
+		(pts
+			(xy 62.23 115.57) (xy 62.23 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d288996-03cc-4980-9b52-66ea69767e89")
 	)
 	(wire
 		(pts
@@ -5035,6 +5292,16 @@
 	)
 	(wire
 		(pts
+			(xy 62.23 114.3) (xy 62.23 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b42106d-249e-42b0-89bc-79ff713fef3d")
+	)
+	(wire
+		(pts
 			(xy 27.94 85.09) (xy 27.94 83.82)
 		)
 		(stroke
@@ -5052,6 +5319,16 @@
 			(type default)
 		)
 		(uuid "a6949a9d-047e-4414-aa6c-46fdccc68262")
+	)
+	(wire
+		(pts
+			(xy 59.69 114.3) (xy 62.23 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6fda170-8318-45f1-a041-d0acba0ce6c4")
 	)
 	(wire
 		(pts
@@ -5325,6 +5602,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 123.19) (xy 152.4 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f24b335e-2f6b-4036-84ff-9cec012ed714")
+	)
+	(wire
+		(pts
 			(xy 45.72 78.74) (xy 45.72 80.01)
 		)
 		(stroke
@@ -5430,18 +5717,6 @@
 			(justify right)
 		)
 		(uuid "90d6ead3-83c6-416b-bd79-d29dd65dab18")
-	)
-	(hierarchical_label "I2C_SCL"
-		(shape input)
-		(at 152.4 125.73 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a2333d51-c0c5-4cc3-a0e0-6a842391508c")
 	)
 	(hierarchical_label "I2C_SDA"
 		(shape input)
@@ -8674,75 +8949,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 57.15 106.68 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "883fec29-5038-49d3-8475-e99d9670321c")
-		(property "Reference" "J7"
-			(at 57.15 101.7102 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+24V"
-			(at 57.15 104.2471 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002"
-			(at 57.15 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 57.15 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 57.15 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e14d0429-9a6c-4563-bb4a-bc1ed78b5944")
-		)
-		(pin "2"
-			(uuid "8adebaee-5130-47a7-bcd2-eec24a5bc489")
-		)
-		(instances
-			(project "GridSwitcher_PCB"
-				(path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/1dd50b27-f3df-4f7a-9d11-22d683709e54"
-					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 163.83 49.53 270)
 		(unit 1)
@@ -8885,6 +9091,77 @@
 			(project "GridSwitcher_PCB"
 				(path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/1dd50b27-f3df-4f7a-9d11-22d683709e54"
 					(reference "Q17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Barrel_Jack_MountingPin")
+		(at 54.61 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "97870fd6-5602-48a4-9819-b6f53bb279aa")
+		(property "Reference" "J7"
+			(at 54.61 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Barrel_Jack_MountingPin"
+			(at 54.61 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002"
+			(at 55.88 110.236 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 110.236 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "DC Barrel Jack with a mounting pin"
+			(at 54.61 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c72ffae1-03b1-4fb8-bf84-995ac92f8904")
+		)
+		(pin "3"
+			(uuid "b3ab40a0-5522-4484-a046-ccc159cd1e0d")
+		)
+		(pin "2"
+			(uuid "1b4642e1-856d-4a7b-b9c7-807bd4a1ef5f")
+		)
+		(instances
+			(project ""
+				(path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/1dd50b27-f3df-4f7a-9d11-22d683709e54"
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -10446,7 +10723,7 @@
 	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 62.23 109.22 0)
+		(at 62.23 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10455,7 +10732,7 @@
 		(fields_autoplaced yes)
 		(uuid "e04169d6-31d2-460b-9157-851bcbc16904")
 		(property "Reference" "#PWR088"
-			(at 62.23 115.57 0)
+			(at 62.23 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10464,7 +10741,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 62.23 113.6634 0)
+			(at 62.23 120.0134 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10472,7 +10749,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 62.23 109.22 0)
+			(at 62.23 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10481,7 +10758,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.23 109.22 0)
+			(at 62.23 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10490,7 +10767,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 62.23 109.22 0)
+			(at 62.23 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
