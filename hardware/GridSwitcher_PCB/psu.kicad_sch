@@ -2522,102 +2522,6 @@
 				)
 			)
 		)
-		(symbol "GND_5"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_5_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_5_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "INA237AIDGSR:INA237AIDGSR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4487,12 +4391,6 @@
 		(uuid "0c816cfc-b68e-4299-bf97-f9d1d66782fa")
 	)
 	(junction
-		(at 69.85 132.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "10e2fc0c-92db-4c3c-8fef-815f2901e34e")
-	)
-	(junction
 		(at 121.92 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4509,6 +4407,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "38ca7401-780e-456f-84c6-beb0af737f8a")
+	)
+	(junction
+		(at 78.74 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3b4bee80-1ecf-46ac-95d0-b0f5d3be3c6b")
 	)
 	(junction
 		(at 212.09 74.93)
@@ -4629,12 +4533,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c74bc1fd-d57d-4a5a-b6c2-16fa863ba9b4")
-	)
-	(junction
-		(at 78.74 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d572c51b-a4ae-431d-9f9d-2b9ef4069a64")
 	)
 	(junction
 		(at 50.8 82.55)
@@ -5592,7 +5490,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 106.68) (xy 71.12 106.68)
+			(xy 69.85 106.68) (xy 78.74 106.68)
 		)
 		(stroke
 			(width 0)
@@ -6272,74 +6170,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
-		(at 74.93 106.68 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0c47149b-28ed-4616-831e-56f875d529a2")
-		(property "Reference" "F4"
-			(at 74.93 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Fuse"
-			(at 74.93 104.14 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Fuse:Fuse_2920_7451Metric_Pad2.10x5.45mm_HandSolder"
-			(at 74.93 108.458 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 74.93 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 74.93 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "19d035c3-b473-49e0-a275-02ab37952322")
-		)
-		(pin "2"
-			(uuid "ebfed032-1ec1-4606-a40f-d0abf132bafb")
-		)
-		(instances
-			(project "GridSwitcher_PCB"
-				(path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/1dd50b27-f3df-4f7a-9d11-22d683709e54"
-					(reference "F4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L")
 		(at 199.39 44.45 90)
 		(unit 1)
@@ -6917,73 +6747,6 @@
 			(project "GridSwitcher_PCB"
 				(path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/1dd50b27-f3df-4f7a-9d11-22d683709e54"
 					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "GND_5")
-		(lib_id "power:GND")
-		(at 69.85 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "268a4b03-3209-4fc6-bea3-4ce4d550093e")
-		(property "Reference" "#PWR0141"
-			(at 69.85 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 69.85 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 69.85 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 69.85 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 69.85 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6a049ec2-d0bb-4ac6-a09c-51e87cda6a6f")
-		)
-		(instances
-			(project ""
-				(path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/1dd50b27-f3df-4f7a-9d11-22d683709e54"
-					(reference "#PWR0141")
 					(unit 1)
 				)
 			)
@@ -7781,76 +7544,6 @@
 			(project "GridSwitcher_PCB"
 				(path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/1dd50b27-f3df-4f7a-9d11-22d683709e54"
 					(reference "#PWR0132")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 69.85 135.89 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "41ed137b-85e0-41f0-8708-4e38317b7362")
-		(property "Reference" "R113"
-			(at 72.39 134.6199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 72.39 137.1599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 71.628 135.89 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 69.85 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 69.85 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "809ea296-65cd-4be7-88ad-7fa5042dfb8b")
-		)
-		(pin "2"
-			(uuid "f5269cf5-e7d1-4462-ab64-0125a3446134")
-		)
-		(instances
-			(project "GridSwitcher_PCB"
-				(path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/1dd50b27-f3df-4f7a-9d11-22d683709e54"
-					(reference "R113")
 					(unit 1)
 				)
 			)

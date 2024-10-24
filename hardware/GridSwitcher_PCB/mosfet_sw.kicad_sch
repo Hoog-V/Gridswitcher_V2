@@ -2291,7 +2291,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-4_W7.62mm"
+		(property "Footprint" "Package_DIP:DIP-4_W7.62mm_SMDSocket_SmallPads"
 			(at 96.52 114.3 0)
 			(effects
 				(font
@@ -2427,7 +2427,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-4_W7.62mm"
+		(property "Footprint" "Package_DIP:DIP-4_W7.62mm_SMDSocket_SmallPads"
 			(at 86.36 88.9 0)
 			(effects
 				(font

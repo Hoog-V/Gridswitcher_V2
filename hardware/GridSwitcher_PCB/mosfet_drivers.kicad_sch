@@ -919,6 +919,18 @@
 		(uuid "bfb1d8bb-7473-4f0f-9324-390b08ca1cb9")
 	)
 	(junction
+		(at 270.51 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf4fe9ec-029c-4b90-a66c-77edbdf97b93")
+	)
+	(junction
+		(at 240.03 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d7e7ddf8-f9b5-48a6-94ac-0b988f15a352")
+	)
+	(junction
 		(at 275.59 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -935,6 +947,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fa2d5c8f-efb4-401a-a763-1a9ab517eca8")
+	)
+	(junction
+		(at 273.05 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fec1c14d-8f08-4def-99c5-07784793db70")
 	)
 	(wire
 		(pts
@@ -1215,6 +1233,16 @@
 			(type default)
 		)
 		(uuid "2ef1311c-763d-4db7-99ce-f66fb714a476")
+	)
+	(wire
+		(pts
+			(xy 270.51 121.92) (xy 275.59 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34be84ef-6d10-4f3b-a081-9ff939f1f9a5")
 	)
 	(wire
 		(pts
@@ -1528,6 +1556,16 @@
 	)
 	(wire
 		(pts
+			(xy 270.51 119.38) (xy 273.05 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b5da0e0-5df4-459c-b4f4-3753addc60f7")
+	)
+	(wire
+		(pts
 			(xy 67.31 129.54) (xy 69.85 129.54)
 		)
 		(stroke
@@ -1598,6 +1636,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 129.54) (xy 275.59 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76517f28-c244-4564-b708-2aea3bc59332")
+	)
+	(wire
+		(pts
 			(xy 273.05 25.4) (xy 270.51 25.4)
 		)
 		(stroke
@@ -1605,6 +1653,16 @@
 			(type default)
 		)
 		(uuid "79f1e4c7-185e-4e4c-8ec4-9bb0db6cf162")
+	)
+	(wire
+		(pts
+			(xy 240.03 132.08) (xy 240.03 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d7e9928-b2f5-41d0-86d6-cbb09e4f9213")
 	)
 	(wire
 		(pts
@@ -1635,6 +1693,16 @@
 			(type default)
 		)
 		(uuid "832ed53b-b2c5-41b5-ade3-3f576aeccb05")
+	)
+	(wire
+		(pts
+			(xy 275.59 121.92) (xy 275.59 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84796c68-91fb-4f7c-b895-16591d01826c")
 	)
 	(wire
 		(pts
@@ -1808,6 +1876,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 129.54) (xy 240.03 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae6153b2-174a-4fd2-ab5b-55da5d04b5d0")
+	)
+	(wire
+		(pts
 			(xy 66.04 106.68) (xy 68.58 106.68)
 		)
 		(stroke
@@ -1838,6 +1916,16 @@
 	)
 	(wire
 		(pts
+			(xy 273.05 119.38) (xy 273.05 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2fcca85-f5ce-4715-9cd2-bcaaf6d4933e")
+	)
+	(wire
+		(pts
 			(xy 96.52 124.46) (xy 101.6 124.46)
 		)
 		(stroke
@@ -1855,6 +1943,26 @@
 			(type default)
 		)
 		(uuid "b65964c3-ab5c-41f2-a432-c0d447767f5b")
+	)
+	(wire
+		(pts
+			(xy 273.05 124.46) (xy 273.05 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6e1ab3f-c4cd-4f9a-bbd7-58492ff138fb")
+	)
+	(wire
+		(pts
+			(xy 270.51 124.46) (xy 273.05 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8632a61-c59c-488e-9cff-d14350597570")
 	)
 	(wire
 		(pts
@@ -1995,6 +2103,16 @@
 			(type default)
 		)
 		(uuid "e3fbaab3-5c12-464a-bc86-96cc01f4686a")
+	)
+	(wire
+		(pts
+			(xy 270.51 116.84) (xy 273.05 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e417924a-0e27-4bba-8abb-08ca33d1e754")
 	)
 	(wire
 		(pts
@@ -2205,6 +2323,16 @@
 			(type default)
 		)
 		(uuid "ff590b2c-1130-493e-befc-aa2c45893bd4")
+	)
+	(text "I2C Adr:\nIC7: 0b1000 010\nIC3: 0b1000 011\nIC4: 0b1000 100\nIC10: 0b1000 101"
+		(exclude_from_sim no)
+		(at 208.534 150.114 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "89d5aa92-f251-4d4b-8ebf-db3b2e714538")
 	)
 	(hierarchical_label "MOS_8_OUT"
 		(shape output)
@@ -2722,6 +2850,30 @@
 		)
 		(uuid "9f885de2-6e83-42ab-a26b-e302e095d6a6")
 	)
+	(hierarchical_label "TEMP_ALERT"
+		(shape input)
+		(at 240.03 121.92 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a40cc4ab-befa-4545-ab7c-2814bd26d164")
+	)
+	(hierarchical_label "I2C_SDA"
+		(shape input)
+		(at 240.03 116.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a97e6d69-2692-4f2b-85b8-b0584cf2d484")
+	)
 	(hierarchical_label "MOS_1_IN"
 		(shape input)
 		(at 39.37 33.02 180)
@@ -2805,6 +2957,18 @@
 			(justify right)
 		)
 		(uuid "e299aac8-0774-41a4-b382-d78c88d5ce53")
+	)
+	(hierarchical_label "I2C_SCL"
+		(shape input)
+		(at 240.03 119.38 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e2a559ea-3e8a-4f38-82a1-5947288e96f0")
 	)
 	(hierarchical_label "MOS_4_ON"
 		(shape output)
@@ -5536,6 +5700,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 240.03 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "876b138a-e13d-4327-a8b5-6927f72f075a")
+		(property "Reference" "#PWR0142"
+			(at 240.03 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 240.03 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 240.03 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6813332c-b6c9-4524-9c8d-d2029057604b")
+		)
+		(instances
+			(project "GridSwitcher_PCB"
+				(path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/e7e98d01-f07d-4b98-aa14-db8c28a7655b"
+					(reference "#PWR0142")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDD")
 		(at 154.94 39.37 0)
 		(unit 1)
@@ -7575,6 +7805,210 @@
 			(project "GridSwitcher_PCB"
 				(path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/e7e98d01-f07d-4b98-aa14-db8c28a7655b"
 					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 270.51 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e31eda2e-b3b9-4eb7-baa0-d0db282098ad")
+		(property "Reference" "#PWR0143"
+			(at 270.51 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 270.51 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 270.51 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 270.51 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 270.51 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1fb386ff-1bfb-4196-a505-07e735b4d63e")
+		)
+		(instances
+			(project "GridSwitcher_PCB"
+				(path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/e7e98d01-f07d-4b98-aa14-db8c28a7655b"
+					(reference "#PWR0143")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "P3T1755DPZ:P3T1755DPZ")
+		(at 240.03 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9fa987a-f812-4da0-abbd-c2cbc6fdccde")
+		(property "Reference" "IC10"
+			(at 255.27 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "P3T1755DPZ"
+			(at 255.27 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Library:P3T1755DPZ"
+			(at 266.7 211.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/P3T1755DS.pdf"
+			(at 266.7 311.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 240.03 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.1"
+			(at 266.7 511.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "771-P3T1755DPZ"
+			(at 266.7 611.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/NXP-Semiconductors/P3T1755DPZ?qs=rQFj71Wb1eWT4G6DVajfNw%3D%3D"
+			(at 266.7 711.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "NXP"
+			(at 266.7 811.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "P3T1755DPZ"
+			(at 266.7 911.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "c7af5e38-1de3-41db-8590-d831973b1500")
+		)
+		(pin "1"
+			(uuid "b3b9d78a-75ed-4d07-9c1c-b45568609adb")
+		)
+		(pin "5"
+			(uuid "a81300f6-75c0-4789-8830-8fe646011712")
+		)
+		(pin "7"
+			(uuid "dc53323f-08b5-446d-956c-dd200891ccaa")
+		)
+		(pin "3"
+			(uuid "7dfabbb2-f051-4aa8-aa90-4f809e3028ed")
+		)
+		(pin "4"
+			(uuid "2a6fe1ca-a670-4f12-8ee2-2f4caf8764f2")
+		)
+		(pin "8"
+			(uuid "c4582d9a-a903-4a5c-8857-50b9a2b805b4")
+		)
+		(pin "2"
+			(uuid "774062fa-a44b-4b29-8888-ebf27777222f")
+		)
+		(instances
+			(project "GridSwitcher_PCB"
+				(path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/e7e98d01-f07d-4b98-aa14-db8c28a7655b"
+					(reference "IC10")
 					(unit 1)
 				)
 			)

@@ -5,6 +5,141 @@
 	(uuid "fb8cffea-d7f2-48db-a3ca-55238c2236fc")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:C_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "FRDM-MCXN947__Shield_Template-altium-import:root_0_mirrored_SSQ-106-03-T-D"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4023,10 +4158,28 @@
 		)
 	)
 	(junction
+		(at 264.16 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f58e813-49c8-468a-8e55-69ff7c565d17")
+	)
+	(junction
+		(at 40.64 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4394bbf4-efef-4733-9134-738d8f86e561")
+	)
+	(junction
 		(at 54.61 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5ee73232-8336-4804-9a4b-7377d427e2b4")
+	)
+	(junction
+		(at 78.74 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c491d7c3-8622-47b7-991b-16fe14ee8feb")
 	)
 	(junction
 		(at 41.91 36.83)
@@ -4067,6 +4220,16 @@
 			(type default)
 		)
 		(uuid "0324eb2b-e495-4ead-a06b-c256ce9b217f")
+	)
+	(wire
+		(pts
+			(xy 74.93 125.73) (xy 78.74 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a56e101-c2ab-4610-b5b5-e2753bc62c7c")
 	)
 	(wire
 		(pts
@@ -4520,13 +4683,23 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 143.51) (xy 231.14 143.51)
+			(xy 242.57 144.78) (xy 264.16 144.78)
 		)
 		(stroke
 			(width 0.254)
 			(type default)
 		)
 		(uuid "5ae4262b-d440-4896-860c-c10e9c1b9492")
+	)
+	(wire
+		(pts
+			(xy 40.64 36.83) (xy 39.37 36.83)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "5f430ba1-8298-4ee5-af1e-09fa29898f50")
 	)
 	(wire
 		(pts
@@ -4607,6 +4780,26 @@
 			(type default)
 		)
 		(uuid "70d9e88f-c91b-4fba-8641-316cc04d82d8")
+	)
+	(wire
+		(pts
+			(xy 78.74 130.81) (xy 97.79 130.81)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "7267b567-1ea3-476b-89b0-7168cc4d23bb")
+	)
+	(wire
+		(pts
+			(xy 242.57 143.51) (xy 220.98 143.51)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "73532dea-161f-43b5-b8a1-2a0ec60a1639")
 	)
 	(wire
 		(pts
@@ -4740,7 +4933,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 130.81) (xy 97.79 130.81)
+			(xy 69.85 130.81) (xy 78.74 130.81)
 		)
 		(stroke
 			(width 0.254)
@@ -4900,6 +5093,16 @@
 	)
 	(wire
 		(pts
+			(xy 260.35 139.7) (xy 264.16 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acecea85-b3f9-46e1-8b40-21683308bed6")
+	)
+	(wire
+		(pts
 			(xy 220.98 146.05) (xy 231.14 146.05)
 		)
 		(stroke
@@ -4927,6 +5130,16 @@
 			(type default)
 		)
 		(uuid "ae0dcfd3-bc33-4ad2-8787-aabcd24b75b7")
+	)
+	(wire
+		(pts
+			(xy 242.57 144.78) (xy 242.57 143.51)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "aec3c9fa-93b2-434d-a227-3b09b0229a49")
 	)
 	(wire
 		(pts
@@ -5080,7 +5293,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 36.83) (xy 39.37 36.83)
+			(xy 41.91 36.83) (xy 40.64 36.83)
 		)
 		(stroke
 			(width 0.254)
@@ -5308,6 +5521,26 @@
 		)
 		(uuid "f508eca2-b7e2-4845-ae17-0bcba4e56d7a")
 	)
+	(wire
+		(pts
+			(xy 264.16 144.78) (xy 265.43 144.78)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(uuid "f5c8510d-11bf-44a5-9332-8093b1a919a5")
+	)
+	(wire
+		(pts
+			(xy 36.83 31.75) (xy 40.64 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8c0c5ee-87a9-4d4d-9e30-e43309617dd5")
+	)
 	(hierarchical_label "P1_10{slash}EZH_LCD_D6_CAMERA_D6"
 		(shape bidirectional)
 		(at 184.15 133.35 180)
@@ -5439,6 +5672,18 @@
 			(justify right)
 		)
 		(uuid "13982be5-34e5-4500-a56c-dc43737a8820")
+	)
+	(hierarchical_label "GND"
+		(shape passive)
+		(at 74.93 125.73 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "155e86b2-13a3-4708-a4d9-7b5732aaf851")
 	)
 	(hierarchical_label "OP-0-I{slash}P0-20"
 		(shape bidirectional)
@@ -6412,6 +6657,18 @@
 		)
 		(uuid "c4809656-8d92-4a70-a27e-17bc3219a167")
 	)
+	(hierarchical_label "GND"
+		(shape passive)
+		(at 260.35 139.7 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c751a517-2c79-49d1-82f3-704983dca7ee")
+	)
 	(hierarchical_label "P1_23{slash}EZH_LCD_RD"
 		(shape bidirectional)
 		(at 231.14 146.05 0)
@@ -6570,7 +6827,7 @@
 	)
 	(hierarchical_label "+3V3"
 		(shape passive)
-		(at 231.14 143.51 0)
+		(at 265.43 144.78 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6639,6 +6896,18 @@
 			(justify left)
 		)
 		(uuid "e38f5b07-e528-4044-b84d-b219234dabce")
+	)
+	(hierarchical_label "GND"
+		(shape passive)
+		(at 36.83 31.75 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e509b803-dbda-4366-acf4-1353aea82113")
 	)
 	(hierarchical_label "P5-2{slash}P0-14"
 		(shape bidirectional)
@@ -7055,6 +7324,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 264.16 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5381c417-4592-4b06-8c1d-8fe5674bdb1b")
+		(property "Reference" "C17"
+			(at 267.335 141.6113 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 267.335 144.1513 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 264.16 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 264.16 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 264.16 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a4811f35-8851-4730-970c-87f5a202da39")
+		)
+		(pin "2"
+			(uuid "39d55daa-901d-4ce5-8527-d7990126ff60")
+		)
+		(instances
+			(project "GridSwitcher_PCB"
+				(path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/fc33dd87-afec-4399-b566-7d146648c6e3"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "FRDM-MCXN947__Shield_Template-altium-import:root_0_mirrored_SSQ-116-03-T-D")
 		(at 212.09 135.89 0)
 		(unit 1)
@@ -7415,6 +7754,146 @@
 			(project "GridSwitcher_PCB"
 				(path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/fc33dd87-afec-4399-b566-7d146648c6e3"
 					(reference "J12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 78.74 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a67fe88e-6c2e-47c8-becb-791b917d10f7")
+		(property "Reference" "C15"
+			(at 81.915 127.6413 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 81.915 130.1813 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 78.74 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e58c683-25af-4ee3-a590-5d039c0d4351")
+		)
+		(pin "2"
+			(uuid "6b99e43d-28e4-41a9-a023-ec149c43aa10")
+		)
+		(instances
+			(project "GridSwitcher_PCB"
+				(path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/fc33dd87-afec-4399-b566-7d146648c6e3"
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 40.64 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a80a512f-3d21-403e-b726-6193890b8302")
+		(property "Reference" "C16"
+			(at 43.815 33.6613 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 43.815 36.2013 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 40.64 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 40.64 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 40.64 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b67ca909-5217-4dc1-8218-69a7c1e3102a")
+		)
+		(pin "2"
+			(uuid "1ae9a854-63e2-4be9-939b-a10204706700")
+		)
+		(instances
+			(project "GridSwitcher_PCB"
+				(path "/85d790fa-2a68-4a26-9dd2-3e7bd6cf9669/fc33dd87-afec-4399-b566-7d146648c6e3"
+					(reference "C16")
 					(unit 1)
 				)
 			)
